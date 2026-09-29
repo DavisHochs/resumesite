@@ -78,7 +78,7 @@ p { margin: 0 0 0.75rem; }
 /* Stats strip */
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 1.75rem;
   background: var(--tint);
   border-top: 2px solid var(--accent);
@@ -107,9 +107,9 @@ footer { margin-top: 3rem; text-align: center; color: var(--muted); font-size: 0
 
 /* Small screens */
 @media (max-width: 40rem) {
-  .stats { grid-template-columns: repeat(2, 1fr); }
-  .stats div:nth-child(3) { border-left: none; }
-  .stats div:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  .stats div { padding: 0.6rem 0.35rem; }
+  .stats b { font-size: 1.15rem; }
+  .stats span { font-size: 0.72rem; }
   .skills { grid-template-columns: 1fr; gap: 0; }
   .skills dd { margin-bottom: 0.6rem; }
 }
